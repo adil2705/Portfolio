@@ -199,14 +199,7 @@ export const projects = [
       "Designed and Developed a platform for the Programmers Club, A internal Club of AIKTC which aims 'For the Student By the Students'",
     link: "https://github.com/adil2705/pc-web-frontend",
   },
-  {
-    iconUrl: algo,
-    theme: "btn-back-blue",
-    name: "algo",
-    description:
-      "Algorithm 8.0 is an unique and innovative event that encourages innovation and collaboration in the tech community. It provides a platform for our participants to challenge themselves, expand their knowledge, and create meaningful solutions to real-world problems related to social awareness. Whether you are a seasoned developer or a newcomer to the field, Algorithm 8.0 offers a unique opportunity to be a part of something truly impactful and make a difference in the world",
-    link: "https://github.com/adil2705/Algorithm-8.0",
-  },
+  
   {
     iconUrl: skns,
     theme: "btn-back-blue",
@@ -214,6 +207,14 @@ export const projects = [
     description:
       "SKNS & SONS Solutions Pvt. Ltd., has emerged as one of the largest System Integration Company with presence in Bihar and neighbouring States.",
     link: "https://sknssolutions.in/",
+  },
+  {
+    iconUrl:   Algorithm 8.O Hackathon,
+    theme: "btn-back-blue",
+    name: "algo",
+    description:
+      "Algorithm 8.0 is an unique and innovative event that encourages innovation and collaboration in the tech community. It provides a platform for our participants to challenge themselves, expand their knowledge, and create meaningful solutions to real-world problems related to social awareness. Whether you are a seasoned developer or a newcomer to the field, Algorithm 8.0 offers a unique opportunity to be a part of something truly impactful and make a difference in the world",
+    link: "https://github.com/adil2705/Algorithm-8.0",
   },
 
 ];
