@@ -57,7 +57,7 @@ const HomeInfo = () => {
           </NavLink>
         </div>
       </div>
-      <div className="mt-5 font-semibold backdrop-blur-[2px] rounded-lg text-2xl lg:text-4xl blue-gradient-text ">
+      <div className="mt-5 blue-gradient-text font-semibold backdrop-blur-[2px] rounded-lg text-2xl lg:text-4xl blue-gradient-text ">
         <span>
           Currently a final year Computer Engineering student from India.
         </span>
