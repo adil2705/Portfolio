@@ -4,7 +4,7 @@ import { Alert } from "../components";
 import StarsCanvas from "../components/Stars";
 import EarthCanvas from "../models/Earth";
 import Footer from "../components/Footer";
-require('dotenv').config();
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -35,7 +35,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(process.env.BASE_URL+"/contact", {
+      const response = await fetch("https://portfolio-o8uj.onrender.com/contact", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
