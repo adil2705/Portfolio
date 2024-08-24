@@ -87,7 +87,7 @@ export const skills = [
 export const education = [
   {
     title: "Anjuman-I-Islam's Kalsekar Technical Campus, Panvel",
-    date: "Dec 2021 - Aug 2025   |   CGPA: 7.83",
+    date: "Dec 2021 - Aug 2025   |   CGPA: 7.85",
     icon: educationIcon,
     iconBg: "#00c6ff",
     points: [
