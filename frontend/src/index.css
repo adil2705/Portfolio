@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@layer utilities {
+  .max-container {
+    @apply max-w-5xl mx-5 lg:mx-auto lg:px-12 !pt-[126px] min-h-[calc(100vh-80px)];
+  }
+
+  .head-text {
+    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+  }
+
+  .subhead-text {
+    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+  }
+
+  .blue-gradient-text {
+    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+  }
+
+  .input {
+    @apply bg-white border border-gray-200 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
+  }
+
+  .textarea {
+    @apply block p-2.5 w-full text-base text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow-card;
+  }
+
+  .btn {
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center;
+  }
+
+  .header {
+    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+  }
+
+  .footer {
+    @apply max-w-5xl m-auto px-5 lg:px-12 mt-10 pb-8 flex flex-col gap-6;
+  }
+
+  .footer-container {
+    @apply flex flex-wrap gap-7 items-center justify-between;
+  }
+
+  .info-box {
+    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue pt-4 pb-12 px-8;
+  }
+
+  .cta {
+    @apply w-full flex items-center md:flex-row flex-col my-10 gap-6;
+  }
+
+  .cta-text {
+    @apply text-white font-semibold flex-1 text-3xl max-md:text-center;
+  }
+
+  .orange-gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-red-600;
+  }
+}
+
+.linkedin-icon {
+  height: 46px;
+  width: 46px;
+}
+
+.gradient-box {
+  border-radius: 10px;
+  border: 3px solid #fb923c;
+  width: fit-content;
+  font-weight: bold;
+  color: #dc2626;
+}
+
+.block-container {
+  position: relative;
+  transition: 250ms;
+  perspective: 500px;
+}
+
+.block-container .btn-front {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  transition: 250ms;
+  transform-style: preserve-3d;
+  background-color: #ffffff;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.project-container {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.block-container:hover > .btn-back {
+  transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
+}
+
+.block-container:hover > .btn-front {
+  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+}
+
+.neo-brutalism-blue {
+  background: #2b77e7;
+  position: relative;
+  border-radius: 10px;
+  border: #2b77e7;
+  box-shadow:
+    0.6vmin 0.6vmin #336cc1,
+    1vmin 1vmin #0092db,
+    1vmin 1vmin #0092db,
+    0.65vmin 1vmin #0092db,
+    1vmin 0.65vmin #0092db;
+}
