@@ -4,6 +4,7 @@ import { Alert } from "../components";
 import StarsCanvas from "../components/Stars";
 import EarthCanvas from "../models/Earth";
 import Footer from "../components/Footer";
+require('dotenv').config();
 
 const Contact = () => {
   const formRef = useRef();
@@ -34,7 +35,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/contact', {
+      const response = await fetch(process.env.BASE_URL+"/contact", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
