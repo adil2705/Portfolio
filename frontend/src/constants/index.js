@@ -209,9 +209,9 @@ export const projects = [
     link: "https://sknssolutions.in/",
   },
   {
-    iconUrl:   Algorithm 8.O Hackathon,
+    iconUrl: algo,
     theme: "btn-back-blue",
-    name: "algo",
+    name: "Algorithm 8.0 Hackathon",
     description:
       "Algorithm 8.0 is an unique and innovative event that encourages innovation and collaboration in the tech community. It provides a platform for our participants to challenge themselves, expand their knowledge, and create meaningful solutions to real-world problems related to social awareness. Whether you are a seasoned developer or a newcomer to the field, Algorithm 8.0 offers a unique opportunity to be a part of something truly impactful and make a difference in the world",
     link: "https://github.com/adil2705/Algorithm-8.0",
