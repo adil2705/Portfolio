@@ -35,7 +35,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://portfolio-o8uj.onrender.com/contact", {
+      const response = await fetch("abhi api band kia hu", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
