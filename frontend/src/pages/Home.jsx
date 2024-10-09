@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 
 import { HomeContext } from "../context";
 import { HomeInfo, Welcome } from "../components";
-import { Sky } from "../models";
+import { Sky, computer } from "../models";
 
 const Home = () => {
   const { loadingProgress, setLoadingProgress, hasWelcomeShown } =
@@ -33,7 +33,7 @@ const Home = () => {
           groundColor="#000000"
           intensity={2}
         />
-        <Sky setLoadingProgress={setLoadingProgress} />
+        <SketchfabEmbed setLoadingProgress={setLoadingProgress} />
       </Canvas>
     </section>
   );
