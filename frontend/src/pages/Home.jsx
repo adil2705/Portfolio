@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 
 import { HomeContext } from "../context";
 import { HomeInfo, Welcome } from "../components";
-import { Sky, computer } from "../models";
+import { Sky, SketchfabEmbed  } from "../models";
 
 const Home = () => {
   const { loadingProgress, setLoadingProgress, hasWelcomeShown } =
