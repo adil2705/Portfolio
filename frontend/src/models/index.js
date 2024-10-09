@@ -1,3 +1,2 @@
 
-export { SketchfabEmbed } from "./Computer";
 
