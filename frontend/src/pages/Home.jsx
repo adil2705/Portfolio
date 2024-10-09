@@ -1,13 +1,54 @@
 import React, { useContext } from "react";
-import { Canvas } from "@react-three/fiber";
-
 import { HomeContext } from "../context";
 import { HomeInfo, Welcome } from "../components";
-import { SketchfabEmbed } from "../models/Computer";
+
+const SketchfabEmbed = () => {
+  return (
+    <div className="sketchfab-embed-wrapper" style={{ maxWidth: "100%", height: "500px" }}>
+      <iframe
+        title="Computer and laptop"
+        frameBorder="0"
+        allowFullScreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        src="https://sketchfab.com/models/8757cd8dd5c941248cc1048fd6368290/embed"
+        style={{ width: "100%", height: "100%" }}
+      ></iframe>
+      <p style={{ fontSize: "13px", fontWeight: "normal", margin: "5px", color: "#4A4A4A" }}>
+        <a
+          href="https://sketchfab.com/3d-models/computer-and-laptop-8757cd8dd5c941248cc1048fd6368290?utm_medium=embed&utm_campaign=share-popup&utm_content=8757cd8dd5c941248cc1048fd6368290"
+          target="_blank"
+          rel="nofollow"
+          style={{ fontWeight: "bold", color: "#1CAAD9" }}
+        >
+          Computer and laptop
+        </a>{" "}
+        by{" "}
+        <a
+          href="https://sketchfab.com/sugaa?utm_medium=embed&utm_campaign=share-popup&utm_content=8757cd8dd5c941248cc1048fd6368290"
+          target="_blank"
+          rel="nofollow"
+          style={{ fontWeight: "bold", color: "#1CAAD9" }}
+        >
+          sugaa
+        </a>{" "}
+        on{" "}
+        <a
+          href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=8757cd8dd5c941248cc1048fd6368290"
+          target="_blank"
+          rel="nofollow"
+          style={{ fontWeight: "bold", color: "#1CAAD9" }}
+        >
+          Sketchfab
+        </a>
+      </p>
+    </div>
+  );
+};
 
 const Home = () => {
-  const { loadingProgress, setLoadingProgress, hasWelcomeShown } =
-    useContext(HomeContext);
+  const { loadingProgress, hasWelcomeShown } = useContext(HomeContext);
 
   return (
     <section className="bg-gradient-to-r from-slate-900 to-[#1B1212] min-h-screen relative">
@@ -15,26 +56,9 @@ const Home = () => {
       <div className="absolute inset-0 z-10">
         <HomeInfo />
       </div>
-      <Canvas
-        camera={{ near: 0.1, far: 100 }}
-        style={{ pointerEvents: "none", position: "fixed" }}
-      >
-        <directionalLight position={[1, 1, 1]} intensity={2} />
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 5, 10]} intensity={2} />
-        <spotLight
-          position={[0, 50, 10]}
-          angle={0.15}
-          penumbra={1}
-          intensity={2}
-        />
-        <hemisphereLight
-          skyColor="#000000"
-          groundColor="#000000"
-          intensity={2}
-        />
-        <SketchfabEmbed setLoadingProgress={setLoadingProgress} />
-      </Canvas>
+      <div style={{ position: "fixed", width: "100%", height: "100%" }}>
+        <SketchfabEmbed />
+      </div>
     </section>
   );
 };
