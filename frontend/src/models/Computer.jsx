@@ -1,6 +1,7 @@
+// models/Computer.js
 import React from "react";
 
-const SketchfabEmbed = () => {
+export const SketchfabEmbed = () => {
   return (
     <div className="sketchfab-embed-wrapper" style={{ maxWidth: "100%", height: "500px" }}>
       <iframe
@@ -44,5 +45,3 @@ const SketchfabEmbed = () => {
     </div>
   );
 };
-
-export default SketchfabEmbed;
