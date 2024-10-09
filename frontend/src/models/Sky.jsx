@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export const Sky = memo(({ setLoadingProgress }) => {
   const { progress } = useProgress();
-  const sky = useLoader(GLTFLoader, "./sky.glb");
+  const sky = useLoader(GLTFLoader, "./computer.glb");
   const skyRef = useRef();
 
   useFrame((state, delta) => {
