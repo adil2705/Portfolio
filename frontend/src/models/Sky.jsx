@@ -11,7 +11,7 @@ const Sky = memo(({ setLoadingProgress }) => {
   // Rotate the model continuously
   useFrame((state, delta) => {
     if (skyRef.current) {
-      skyRef.current.rotation.y += delta / 40;
+      skyRef.current.rotation.y += delta / 50;
     }
   });
 
