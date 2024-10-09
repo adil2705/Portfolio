@@ -1,3 +1,3 @@
 export { Sky } from "./Sky";
-export { SketchfabEmbed } from "./computer";
+export { SketchfabEmbed } from "./Computer";
 
