@@ -64,7 +64,7 @@ const HomeInfo = () => {
       </div>
       <div className="mt-5">
         <a
-          href="https://drive.google.com/file/d/16_ZzUAHzRNsQJRM_LVgb9VUrmHFZNUgB/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Ge0co07k-gkKd5Y5WqfRWQOkZ1CCqnWD/view?usp=drivesdk"
           target="_blank"
           rel="noreferrer"
         >
